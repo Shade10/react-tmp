@@ -37,10 +37,8 @@ class Badges extends Component {
                         this.state.badge.map(
                             badge => (
                                 <li key={badge.id}>
-                                    <div>
-                                        <p>Badge - <b>{badge.title}</b>: <br></br> {badge.description}</p>
-                                    </div>
-                                    {}
+                                    <p>Badge - <b>{badge.title}</b>: <br></br> {badge.description}</p>
+                                    <button onClick={() => { }}>How to Get this badge</button>
                                 </li>
                             )
                         )

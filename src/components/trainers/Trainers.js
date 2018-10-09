@@ -27,6 +27,27 @@ class Trainers extends Component {
             }
         ]
     }
+
+    render() {
+        return (
+            <div className="App">
+                <h1>Trainers</h1>
+                <ul>
+                    {
+                        this.state.trainers.map(
+                            trainers => (
+                                <li key={trainers.id}>
+                                    <p>Badge - <b>{trainers.name}</b>: <br></br> {trainers.description}</p>
+                                    {trainers.WchichBadgeHeCanGive}
+                                    <button onClick={() => { }}>How to find trainer</button>
+                                </li>
+                            )
+                        )
+                    }
+                </ul>
+            </div>
+        )
+    }
 }
 
 export default Trainers

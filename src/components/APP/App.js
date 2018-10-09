@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Badges from '../object/Badges';
+import Badges from '../badges/Badges';
 import './App.css';
 
 class App extends Component {
